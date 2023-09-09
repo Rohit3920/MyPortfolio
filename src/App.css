@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light: white;
+  --primary: #007bff;
+  --dark: black;
+
+}
+
+.App {
+  text-align: center;
+}
+
+.NotFound {
+  height: 100vh;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NotFound h1 span {
+  color: rgb(255, 54, 54);
+}
+
+#navbar {
+  border-radius: 0 0 2em 2em/ 0 0 1em 1em;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px var(--light);
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  top: 0;
+  left: 8%;
+  z-index: 3;
+  background-color: var(--light);
+}
+
+#navBar #navbarSupportedContent {
+  background-color: var(--light);
+}
+
+#navBar-icon {
+  color: var(--primary);
+  border: 2px solidv;
+  padding: 2px;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+#navBar-icon:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
