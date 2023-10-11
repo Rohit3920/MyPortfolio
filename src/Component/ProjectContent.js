@@ -15,6 +15,8 @@ const ProjectContent = (props) => {
     const api = "https://www.svgrepo.com/show/261808/api.svg"
     const node = "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
     const mongoDB = "http://definelabs.com/wp-content/uploads/2016/06/MongoDB-Logo.svg_.png"
+    const scss = "https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg"
+
 
     return (
         <div className="col-lg-3 m-0 m-sm-5 m-lg-5 border rounded">
@@ -48,7 +50,9 @@ const ProjectContent = (props) => {
                                                                             <img className="pj-logo-t mt-2" src={node} alt="file not found" />
                                                                             : tech === 'mongoDB' ?
                                                                                 <img className="pj-logo-t mt-2" src={mongoDB} alt="file not found" />
-                                                                                : <></>
+                                                                                : tech === 'scss' ?
+                                                                                    <img className="pj-logo-t mt-2" src={scss} alt="file not found" />
+                                                                                    : <></>
                                 }
                             </div>
                         )
